@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/index.css">
     <title>Smoothie Webpage</title>
 </head>
 
 <body>
 <header class="header">
-    <div class="header-top">
-        <nav>
-            <ul>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Story</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Testimonials</a></li>
+    <div class="header__top">
+        <nav class="header__nav main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__list-item"><a class="main-menu__link" href="">Shop</a></li>
+                <li class="main-menu__list-item"><a class="main-menu__link" href="">Home</a></li>
+                <li class="main-menu__list-item"><a class="main-menu__link" href="">Story</a></li>
+                <li class="main-menu__list-item"><a class="main-menu__link" href="">About</a></li>
+                <li class="main-menu__list-item"><a class="main-menu__link" href="">Blog</a></li>
+                <li class="main-menu__list-item"><a class="main-menu__link" href="">Testimonials</a></li>
             </ul>
         </nav>
-        <div class="logo">
-            <a href="">
-                <img src="" alt="">
+        <div class="logo header__logo">
+            <a class="logo__link" href="">
+                <img class="logo__img" src="" alt="">
             </a>
         </div>
-        <div class="personal">
-            <ul>
-                <li>
-                    <a href=""><img src="" alt=""></a>
+        <div class="header__personal personal">
+            <ul class="personal__list">
+                <li class="personal__list-item">
+                    <a class="personal__link" href=""><img class="personal__img" src="" alt=""></a>
                 </li>
-                <li>
-                    <a href=""><img src="" alt=""></a>
+                <li class="personal__list-item">
+                    <a class="personal__link" href=""><img class="personal__img" src="" alt=""></a>
                 </li>
-                <li>
-                    <a href=""><img src="" alt=""></a>
+                <li class="personal__list-item">
+                    <a href=""><img class="personal__img" src="" alt=""></a>
                     <span>3</span>
                 </li>
             </ul>
@@ -53,24 +54,19 @@
             </ul>
         </div>
     </div>
-    <div class="header-content">
+    <div class="header__content">
         <h1>Best Smoothies Ever</h1>
         <button class="shop">Shop now</button>
     </div>
 </header>
 <section class="smoothies">
-    <div class="smoothies_text">
-        <h2>What are these smoothies?</h2>
-        <p>
-            A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yoghurt
-            <br>
-            ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients, such
-            <br>
-            as water, crushed ice, fruit juice, sweeteners (e.g. honey,sugar, stevia, or syrup), whey powder,plant milk,
-            nuts,<br>
-            nut butter, seeds,tea, chocolate, herbal supplements, or nutritional supplements.
-        </p>
-    </div>
+    <h2>What are these smoothies?</h2>
+    <p>
+        A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yoghurt
+        ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients, such as
+        water, crushed ice, fruit juice, sweeteners (e.g. honey,sugar, stevia, or syrup), whey powder,plant milk, nuts,
+        nut butter, seeds,tea, chocolate, herbal supplements, or nutritional supplements.
+    </p>
     <div class="features_images">
         <figure>
             <img src="" alt="">
@@ -112,7 +108,7 @@
     <div class="about_drinks">
         <h2>What makes Smoothies an <span class="awesome_drink">awesome drink?</span></h2>
         <ul>
-            <li><strong>Crunchy Puffs</strong> Texture</li>
+            <li><span>Crunchy Puffs</span> Texture</li>
             <li><strong>100 Calories</strong> per drink</li>
             <li>4g Plant Protein</li>
             <li>Good source of <strong>Magnesium & Vitamin B6</strong></li>
@@ -128,10 +124,8 @@
     <div class="choco_prod">
         <img src="./assets/images/Products/Chocolate.png" alt="ChocolateSmoothie">
         <h4>Dark Chocolate Smoothie</h4>
-        <small> 100 ml</small>
-        <p>
-            <button>Buy</button>
-        </p>
+        <span> 100 ml</span>
+        <button>Buy</button>
     </div>
     <div class="vegan_prod">
 
@@ -172,62 +166,65 @@
     </div>
     <div class="true_story_img">
         <img src="./assets/images/Story/StorySmothie.png" alt="Smoothie">
-        <img src="./assets/images/Story/Stamp.png" alt="Stamp">
     </div>
 </section>
 <section class="testimonials">
     <h2> Why clients <span>LOVE</span> us?</h2>
-    <div class="feedback">
-        <q>Smoothie is great. I don't know what else to say. I will let my mum know about this, she could really make
-            use of Smoothie! Smoothie saved my business.</q>
-        <cite> - from Santa Monica, CA</cite>
+    <div>
+        <div class="feedback">
+            <q>Smoothie is great. I don't know what else to say. I will let my mum know about this, she could really
+                make
+                use of Smoothie! Smoothie saved my business.</q>
+            <cite> - from Santa Monica, CA</cite>
+        </div>
+        <img src="./assets/images/Testim/PersonalPhoto.png" alt="CustomerPhoto">
     </div>
-    <img src="./assets/images/Testim/PersonalPhoto.png" alt="CustomerPhoto">
     <div class="arrows">
         <img src="./assets/images/Testim/ArrowLeft.png" alt="Previous">
         <img src="./assets/images/Testim/ArrowRight.png" alt="Next">
     </div>
 </section>
 <section class="blog">
-    <div class="blog_left_side">
-        <h2> Our blog</h2>
+    <h2> Our blog</h2>
+    <div class="blog_">
         <img src="./assets/images/Blog/Blog.png" alt="">
+        <article>
+            <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
+            <time>Jun 16, 2020</time>
+            <p>If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed
+                juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...<a href="">Read More</a>
+            </p>
+        </article>
     </div>
-    <article>
-        <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
-        <time>Jun 16, 2020</time>
-        <p>If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed juice
-            doesn't even have to be blended like a smoothie, i.e. a green juice or anything...<a href="">Read More</a>
-        </p>
-    </article>
 </section>
 <section class="instagram">
     <a href=""> <img src="./assets/images/Instagram/icons/Icon.png" alt="InstaGreenIcon">ashasuperfoods</a>
-    <div class="insta_post1">
-        <a href=""><img src="./assets/images/Instagram/Pictures/Post1.png" alt="InstagramPost1"></a>
-        <img src="./assets/images/Instagram/icons/IconWhite_.png" alt="InstaWhiteIcon">
+    <div class="insta_post">
+        <img src="./assets/images/Instagram/Pictures/Post1.png" alt="InstagramPost1">
     </div>
-    <div class="insta_post2">
+    <div class="insta_post">
         <a href=""><img src="./assets/images/Instagram/Pictures/Post2.png" alt="InstagramPost2"></a>
         <img src="./assets/images/Instagram/icons/IconWhite_.png" alt="InstaWhiteIcon">
     </div>
-    <div class="insta_post3">
+    <div class="insta_post">
         <a href=""><img src="./assets/images/Instagram/Pictures/Post3.png" alt="InstagramPost3"></a>
         <img src="./assets/images/Instagram/icons/IconWhite_.png" alt="InstaWhiteIcon">
     </div>
-    <div class="insta_post4">
+    <div class="insta_post">
         <a href=""><img src="./assets/images/Instagram/Pictures/Post4.png" alt="InstagramPost4"></a>
         <img src="./assets/images/Instagram/icons/IconWhite_.png" alt="InstaWhiteIcon">
     </div>
-    <div class="insta_post5">
+    <div class="insta_post">
         <a href=""><img src="./assets/images/Instagram/Pictures/Post5.png" alt="InstagramPost5"></a>
         <img src="./assets/images/Instagram/icons/IconWhite_.png" alt="InstaWhiteIcon">
     </div>
 </section>
 <footer>
     <div class="footer_top">
-        <div class="logo">
-            <a href=""><img src="./assets/images/Footer/OrgLogo_.png" alt="OrganicLogo"></a>
+        <div class="logo footer__logo">
+            <a class="logo__link" href="">
+                <img class="logo__img" src="" alt="">
+            </a>
         </div>
         <div class="information">
             <h4>Information</h4>
@@ -240,41 +237,40 @@
         </div>
         <div class="payment">
             <h4>Payment</h4>
-            <ul>
-                <li><img src="./assets/images/Footer/AMEX.png" alt="AMEX"></li>
-                <li><img src="./assets/images/Footer/ApplePay.png" alt="ApplePay"></li>
-                <li><img src="./assets/images/Footer/Maestro.png" alt="Maestro"></li>
-                <li><img src="./assets/images/Footer/Discover.png" alt="Discover"></li>
-                <li><img src="./assets/images/Footer/JCB.png" alt="JCB"></li>
-                <li><img src="./assets/images/Footer/Mastercard.png" alt="MasterCard"></li>
-                <li><img src="./assets/images/Footer/Paypal.png" alt="PayPal"></li>
-                <li><img src="./assets/images/Footer/ShopifyPay.png" alt="ShopifyPay"></li>
-                <li><img src="./assets/images/Footer/Visa.png" alt="VISA"></li>
-            </ul>
+            <div>
+                <img src="./assets/images/Footer/AMEX.png" alt="AMEX">
+                <img src="./assets/images/Footer/ApplePay.png" alt="ApplePay">
+                <img src="./assets/images/Footer/Maestro.png" alt="Maestro">
+                <img src="./assets/images/Footer/Discover.png" alt="Discover">
+                <img src="./assets/images/Footer/JCB.png" alt="JCB">
+                <img src="./assets/images/Footer/Mastercard.png" alt="MasterCard">
+                <img src="./assets/images/Footer/Paypal.png" alt="PayPal">
+                <img src="./assets/images/Footer/ShopifyPay.png" alt="ShopifyPay">
+                <img src="./assets/images/Footer/Visa.png" alt="VISA">
+            </div>
         </div>
         <div class="DoNotMiss">
             <h4>Don't miss out!</h4>
             <div class="subscribe">
-                <img src="./assets/images/Footer/LetterIcon.png" alt="LetterIcon">
                 <form action="">
-                    <input type="email" name="subscribe" id="subscribe" placeholder="Subscribe to our newsletter">
+
+                    <input type="email" name="subscribe" id="subscribe" placeholder="Subscribe to our newsletter" />
+                    <button type="submit">FOLLOW US</button>
                 </form>
             </div>
-            <div class="follow_us">
-                <img src="./assets/images/Footer/Arrow.png" alt="Arrow">
-                <a href="">FOLLOW US</a>
-                <ul>
-                    <li><img src="./assets/images/Footer/Facebook.png" alt="Facebook"></li>
-                    <li><img src="./assets/images/Footer/Pinterest.png" alt="Pinterest"></li>
-                    <li><img src="./assets/images/Footer/Instagram.png" alt="Instagram"></li>
-                </ul>
-            </div>
+            <ul class="follow_us">
+                <li><img src="./assets/images/Footer/Facebook.png" alt="Facebook"></li>
+                <li><img src="./assets/images/Footer/Pinterest.png" alt="Pinterest"></li>
+                <li><img src="./assets/images/Footer/Instagram.png" alt="Instagram"></li>
+            </ul>
         </div>
     </div>
     <div class="footer_bottom">
-        <small>© 2020. All Rights Reserved. </small>
-        <aside>Go top</aside>
-        <a href=""><img src="./assets/images/Footer/GotoTop.png" alt="GoToTopButton"></a>
+        <span>© 2020. All Rights Reserved. </span>
+       <div>
+           <span>Go top</span>
+           <a href=""><img src="./assets/images/Footer/GotoTop.png" alt="GoToTopButton"></a>
+       </div>
     </div>
 </footer>
 </body>
