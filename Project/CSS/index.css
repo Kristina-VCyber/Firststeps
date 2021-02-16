@@ -1,0 +1,15 @@
+.header{
+    background-image: url("../assets/images/header/header-bg-img.png");
+}
+.header__content{
+    display: flex;
+    justify-content: center;
+
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu__list{
+    padding: 35px;
+}
