@@ -1,6 +1,32 @@
+@font-face {
+    font-family: "Muli-Bold";
+    src: url("../assets/fonts/Muli-Bold.ttf");
+"Muli-BoldItalic";
+    src: url("../assets/fonts/Muli-BoldItalic.ttf");
+"Muli-ExtraBold" ;
+    src: url("../assets/fonts/Muli-ExtraBold.woff");
+"Muli-Italic" ;
+    src: url("../assets/fonts/Muli-Italic.ttf");
+    "Muli-Regular";
+    src: url("../assets/fonts/Muli-Regular.woff");
+    "Muli-Semi_BoldItalic";
+    src: url("../assets/fonts/Muli-Semi-BoldItalic.ttf");
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+
 .header{
     background-image: url("../assets/images/header/header-bg-img.png");
+
 }
+
+h2 {
+    font-family: Muli-ExtraBold, sans-serif;
+    color: #f7ae3b;
+}
+
 .header__content{
     display: flex;
     justify-content: center;
@@ -10,6 +36,54 @@
     display: flex;
     justify-content: space-between;
 }
+.header__btn{
+    width: 280px;
+    height: 70px;
+    margin: 105px 84px 56px 169px;
+    padding: 25px 39px 22px;
+    border-radius: 35px;
+    background-color: #0aa566;
+}
+
+
+
 .main-menu__list{
     padding: 35px;
+}
+    .text{
+        font-family: Muli-Regular,sans-serif;
+    }
+
+.about{
+    background-color: #188b70;
+}
+.products__menu-brown {
+    background-color: #602a1a
+}
+.products__menu-green {
+    background-color: #188b70
+}
+.products__menu-yellow {
+    background-color: #f5b33f
+}
+.products__menu-orange {
+    background-color: #c54317
+}
+
+
+
+
+
+
+
+.testimonials{
+    background-color: #653018;
+}
+
+
+.footer__top{
+    background-color: #f7ae3e;
+}
+.footer__bottom{
+   background-color: #6a2b1f
 }
