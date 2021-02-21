@@ -16,7 +16,11 @@
     src: url("../assets/fonts/Muli-ExtraBold.woff");
     font-style: normal;
 }
-
+@font-face {
+ "Myriad-ProRegular";
+    src: url("../assets/fonts/Myriad-ProRegular.ttf");
+    font-style: normal;
+}
 /*common styles*/
 ul {
     list-style: none;
@@ -188,20 +192,21 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:#f6edde ;
 }
 
 .smoothies__title {
     margin-top: 98px;
     margin-bottom: 55px;
 
-}
 
+}
 
 .text {
     font-family: Muli-Regular, sans-serif;
 
 }
-/*отображение текста не соответсвует макету*/
+/*отображение текста не соответсвует макету, другой шрифт*/
 .smoothies__text {
     text-align: center;
     width: 921px;
@@ -209,7 +214,58 @@ h2 {
     font-size: 18px;
     line-height: 1.94;
     letter-spacing: normal;
+    color: #1e1e1e;
 }
+.smoothies__advantage{
+    border: 1px solid red;
+    width: 1010px;
+    height: 389px;
+    /*margin: 61px ;*/
+    margin: 61px 457px 107px 453px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;}
+
+.advantage__figure{
+    border: 1px solid red;
+    width: 252px;
+    height:181px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.advantage__img{
+   /*padding:34px 75px 84px 94px;*/
+/*display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: stretch;*/
+/*    align-content: stretch;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+
+}
+
+
+.advantage__figcaption{
+    font-family: Muli-ExtraBold, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing:-0.5px ;
+    color:#f2612d ;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+
+
 
 
 .about {
@@ -218,7 +274,7 @@ h2 {
 
 .products {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: stretch;
 }
 
