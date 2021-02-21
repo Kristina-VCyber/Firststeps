@@ -2,80 +2,110 @@
 @font-face {
     font-family: "Muli-Bold";
     src: url("../assets/fonts/Muli-Bold.ttf");
-    font-style: normal;}
+    font-style: normal;
+}
 
- @font-face {
- "Muli-Regular";
-     src: url("../assets/fonts/Muli-Regular.woff");
-     font-style: normal;
- }
+@font-face {
+"Muli-Regular";
+    src: url("../assets/fonts/Muli-Regular.woff");
+    font-style: normal;
+}
+
 @font-face {
 "Muli-ExtraBold" ;
     src: url("../assets/fonts/Muli-ExtraBold.woff");
     font-style: normal;
 }
+
 /*common styles*/
-ul{
+ul {
     list-style: none;
     margin: 0;
 }
-a{
+
+a {
     display: inline-block;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: inherit;
 }
+
 html,
-body{
+body {
     font-family: Muli-Regular, sans-serif;
 }
-header{
+
+header {
     height: 100vh;
-    background:url("../assets/images/header/header-bg-img.png") no-repeat;
+    background: url("../assets/images/header/header-bg-img.png") no-repeat;
     background-position: center;
     background-size: cover;
-    color:#ffffff ;}
+    color: #ffffff;
+}
 
-.header__top{
-    padding: 70px 100px 100px ;
+.header__top {
+    padding: 70px 100px 100px;
     border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 /*menu*/
-.main-menu__list{
+.main-menu__list {
     border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+
+
 }
-.main-menu__list-item{
+
+.main-menu__list-item {
     margin-right: 35px;
+
+
 }
-.main-menu__list-item:last-child{
+
+.main-menu__list-item:last-child {
     margin-right: 0;
 }
-.main-menu__link{
+
+.main-menu__link {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: Muli-Bold,sans-serif;
+    font-family: Muli-Bold, sans-serif;
     color: white;
 }
+
 /*logo*/
-.logo{
+.logo {
     border: 1px solid red;
 }
+
 /*personal*/
-.header__personal{
-    width:420px;
+.header__right-block {
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
 }
-.personal__list{
+
+.personal__list {
     border: 1px solid red;
+    display: flex;
 }
-.personal__list-item{
+
+.personal__list-item {
     margin-right: 45px;
 }
-.personal__list-item:last-child{
+
+.personal__list-item:last-child {
     margin-right: 0;
 }
-.personal__cart-count{
+
+.personal__cart-count {
     background-color: white;
     display: inline-block;
     height: 18px;
@@ -88,16 +118,21 @@ header{
 }
 
 /*social*/
-.social__list{
+
+.social__list {
     border: 1px solid red;
+    display: flex;
 }
-.social__list-item{
+
+.social__list-item {
     margin-right: 10px;
 }
-.social__list-item:last-child{
+
+.social__list-item:last-child {
     margin-right: 0;
 }
-.social__link{
+
+.social__link {
     display: inline-block;
     height: 35px;
     min-width: 35px;
@@ -107,71 +142,112 @@ header{
     line-height: 2.3;
     border-radius: 50%;
 }
+
 /*header content*/
-.header__content{
+.header__content {
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
 }
+
 /*btn*/
-.header__btn{
+.header__btn {
     height: 70px;
     width: 280px;
 }
-.btn{
+
+.btn {
     border-radius: 35px;
     font-size: 24px;
-    font-family: Muli-ExtraBold,sans-serif;
-    padding: 0 38px;
+    font-family: Muli-ExtraBold, sans-serif;
+    padding: 0 35px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
-.btn--green{
+
+.btn--green {
     background-color: #0aa566;
 }
 
+/*common titles*/
+h2 {
+    font-family: Muli-ExtraBold, sans-serif;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #f7ae3b;
+}
+
+/*section smoothies*/
+.smoothies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smoothies__title {
+    margin-top: 98px;
+    margin-bottom: 55px;
+
+}
 
 
+.text {
+    font-family: Muli-Regular, sans-serif;
+
+}
+/*отображение текста не соответсвует макету*/
+.smoothies__text {
+    text-align: center;
+    width: 921px;
+    height: 122px;
+    font-size: 18px;
+    line-height: 1.94;
+    letter-spacing: normal;
+}
 
 
-
-
-
-    .text{
-        font-family: Muli-Regular,sans-serif;
-    }
-
-.about{
+.about {
     background-color: #188b70;
 }
-.products{
-    display:flex;
+
+.products {
+    display: flex;
     flex-direction: row;
     align-items: stretch;
 }
+
 .products__menu-brown {
     background-color: #602a1a
 }
+
 .products__menu-green {
     background-color: #188b70
 }
+
 .products__menu-yellow {
     background-color: #f5b33f
 }
+
 .products__menu-orange {
     background-color: #c54317
 }
 
 
-
-
-
-
-
-.testimonials{
+.testimonials {
     background-color: #653018;
 }
 
 
-.footer__top{
+.footer__top {
     background-color: #f7ae3e;
 }
-.footer__bottom{
-   background-color: #6a2b1f
+
+.footer__bottom {
+    background-color: #6a2b1f
 }
