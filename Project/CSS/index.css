@@ -208,7 +208,7 @@ h2 {
 
 }
 
-/*отображение текста не соответсвует макету, другой шрифт*/
+/* TODO отображение текста не соответсвует макету, другой шрифт*/
 .smoothies__text {
     text-align: center;
     width: 921px;
@@ -241,7 +241,6 @@ h2 {
 
 }
 
-
 .advantage__figcaption {
     font-family: Muli-ExtraBold, sans-serif;
     font-size: 25px;
@@ -253,8 +252,66 @@ h2 {
 }
 
 
+/* section about */
 .about {
     background-color: #188b70;
+    display: flex;
+    justify-content:space-around;
+
+
+}
+.about__benefits{
+    width: 944px ;
+    /*margin-left:142px;*/
+    color:#ffffff ;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+
+
+
+}
+.about__img{
+    width: 691px;
+    height: 818px;
+    border: 1px solid;
+    margin-top: 64px;
+
+}
+.about__title{
+    border: 1px solid red;
+    width: 588px;
+    font-size:55px;
+    font-weight: 800;
+    line-height: 1.09;
+    letter-spacing: -1.1px;
+    text-align: left;
+    color:#ffffff ;
+
+}
+
+.about__list {
+    list-style: url("../assets/images/about/marker.png");
+    border: 1px solid red;
+    margin-left: 19px;
+    height: 329px;
+    font-size: 21px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+
+}
+
+.text--bold {
+    font-weight: 800;
+}
+.about__btn{
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
+    border: solid 2px #f8b231;
+    background: none;
 }
 
 
@@ -264,14 +321,8 @@ h2 {
     border: 1px solid red;
     display: flex;
     flex-direction: row;
-
-
-
-
-
-
-
 }
+
 
 .products-menu {
     border: 1px solid red;
