@@ -97,11 +97,13 @@ header {
     width: 420px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .personal__list {
     border: 1px solid red;
     display: flex;
+
 }
 
 .personal__list-item {
@@ -129,6 +131,7 @@ header {
 .social__list {
     border: 1px solid red;
     display: flex;
+
 }
 
 .social__list-item {
@@ -256,16 +259,17 @@ h2 {
     border: 5px solid rebeccapurple;
     background-color: #188b70;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 
 }
 
-.about__img-wrap{
+.about__img-wrap {
     width: 50%;
     display: flex;
     justify-content: center;
 }
-.about__img{
+
+.about__img {
     width: 691px;
     height: 818px;
     border: 1px solid;
@@ -273,26 +277,27 @@ h2 {
 
 }
 
-.about__benefits{
+.about__benefits {
     border: 2px solid rebeccapurple;
     width: 50%;
-    color:#ffffff ;
+    color: #ffffff;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
-.about__title{
+.about__title {
     border: 1px solid red;
     width: 588px;
-    font-size:55px;
+    font-size: 55px;
     line-height: 1.09;
     letter-spacing: -1.1px;
     text-align: left;
-    color:#ffffff ;
+    color: #ffffff;
 }
-.about__title--green{
+
+.about__title--green {
     color: #cae941;
 }
 
@@ -310,7 +315,8 @@ h2 {
 .text--bold {
     font-weight: 800;
 }
-.about__btn{
+
+.about__btn {
     width: 380px;
     height: 60px;
     border-radius: 30px;
@@ -334,13 +340,14 @@ h2 {
     height: 720px;
     font-family: Muli-Bold, sans-serif;
     font-size: 24px;
-    line-height:1.6;
+    line-height: 1.6;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+
 /*TODO уменьшить расстояние от картинки до текста*/
 .products__img {
     border: 1px solid red;
@@ -349,11 +356,11 @@ h2 {
 }
 
 /*white text positioning*/
-.products__titles-white{
+.products__titles-white {
     border: 1px solid red;
     display: flex;
     flex-flow: column nowrap;
-   align-items: center;
+    align-items: center;
 
 
 }
@@ -399,13 +406,14 @@ h2 {
     background-color: #c54317;
 
 }
+
 /*blog section*/
-.story{
+.story {
     display: flex;
     height: 881px;
 }
 
-.story__container{
+.story__container {
     border: 2px solid rebeccapurple;
     width: 50%;
     display: flex;
@@ -415,7 +423,8 @@ h2 {
     justify-content: space-evenly;
 
 }
-.story__wrap{
+
+.story__wrap {
     border: 2px solid red;
     height: 329px;
     display: flex;
@@ -423,36 +432,39 @@ h2 {
     justify-content: space-between;
 
 }
-.story__title{
+
+.story__title {
     width: 219px;
 }
+
 /*TODO Отображение текста не совпадает с макетом*/
-.story__text{
-    width:511px;
+.story__text {
+    width: 511px;
     font-size: 18px;
     letter-spacing: normal;
     line-height: 1.94;
 }
-.story__btn{
+
+.story__btn {
     width: 301px;
     height: 60px;
     background-color: #0aa566;
     border-radius: 30px;
 }
-.story__img-wrap{
+
+.story__img-wrap {
     border: 2px solid rebeccapurple;
     width: 50%;
     display: flex;
     align-items: center;
-   justify-content: flex-start;
+    justify-content: flex-start;
 }
+
 .story__img {
     width: 585px;
     height: 601px;
     margin-left: 65px;
 }
-
-
 
 
 /*testimonials block*/
@@ -463,15 +475,10 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center ;
+    align-items: center;
 }
+
 .testimonials__title
-
-
-
-
-
-
 .footer__top {
     background-color: #f7ae3e;
 }
@@ -479,25 +486,47 @@ h2 {
 .footer__bottom {
     background-color: #6a2b1f
 }
-.instagram{
+/*instagram*/
+.instagram {
     border: 2px solid red;
+    /*height: 664px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instagram__img-container {
+    background-color: #cae941;
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
-}
+    justify-content:space-evenly;
+    align-items: center;
+    /*justify-content: stretch;*/
 
-.instagram__img-wrap{
-    border: 2px solid rebeccapurple;
-    width: 25%;
-    /*display: flex;*/
-    /*flex-direction: row;*/
-
-}
-.instagram__link{
 
 }
 
-.instagram__img{
-    width: 384px;
-    height: 384px;
+.instagram__img-wrap {
+    border: 5px solid rebeccapurple;
+    width: 20%;
+    display: flex;
+ justify-content:space-between;
+
+
+
+}
+
+.instagram__link {
+    font-family: Muli-ExtraBold, sans-serif;
+    color: #0aa566;
+    font-weight: 800;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.instagram__img {
 }
