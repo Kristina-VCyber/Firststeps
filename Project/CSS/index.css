@@ -208,6 +208,10 @@ h2 {
 
 .text {
     font-family: Muli-Regular, sans-serif;
+    line-height: 1.94;
+    font-size: 18px;
+    letter-spacing: normal;
+
 }
 
 /* TODO отображение текста не соответсвует макету, другой шрифт*/
@@ -215,9 +219,6 @@ h2 {
     text-align: center;
     width: 921px;
     height: 122px;
-    font-size: 18px;
-    letter-spacing: normal;
-    line-height: 1.94;
     color: #1e1e1e;
 }
 
@@ -411,6 +412,7 @@ h2 {
 .story {
     display: flex;
     height: 881px;
+    background-color: #f6edde;
 }
 
 .story__container {
@@ -440,9 +442,6 @@ h2 {
 /*TODO Отображение текста не совпадает с макетом*/
 .story__text {
     width: 511px;
-    font-size: 18px;
-    letter-spacing: normal;
-    line-height: 1.94;
 }
 
 .story__btn {
@@ -471,6 +470,7 @@ h2 {
 
 .testimonials {
     background-color: #653018;
+    width: 100%;
     height: 720px;
     display: flex;
     flex-direction: column;
@@ -478,43 +478,152 @@ h2 {
     align-items: center;
 }
 
-.testimonials__title
-.footer__top {
-    background-color: #f7ae3e;
+.testimonials__wrap {
+    border: 2px solid greenyellow;
+    min-width: 734px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.footer__bottom {
-    background-color: #6a2b1f
+.testimonials__title {
+
 }
+
+.testimonials__title--uppercase {
+    color: #f2612d;
+}
+
+.testimonials__quote-wrap {
+    border: 2px solid red;
+    width: 455px;
+    height: 130px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Muli-Regular, sans-serif;
+    font-size: 18px;
+    line-height: 1.94;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials__quote {
+    border: 2px solid rebeccapurple;
+}
+
+.testimonials__quote-cite {
+    color: #f7ae3b;
+    /*font-weight: 600;*/
+    font-style: italic;
+    line-height: 2.5;
+
+}
+.testimonials__arrows{
+    border: 2px solid papayawhip;
+    display: flex;
+    justify-content: space-around;
+    min-width: 200px;
+}
+/*blog section*/
+.blog{
+    border: 2px solid red;
+    background-color: #f6edde;
+    height: 798px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+
+
+
+    /*align-items: baseline;*/
+}
+
+.blog__container{
+    border: 2px solid greenyellow;
+    /*min-width: 1140px;*/
+    display: flex;
+    justify-content: center;
+
+}
+.blog__article{
+    border: 2px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.blog__article-title {
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    color: #f2612d;
+}
+
+.blog__article-text {
+    width: 472px;
+    height: 122px;
+}
+.blog__article-date {
+
+}
+
+
+
+
+/*.instagram__img{*/
+/*    width: 555px;*/
+/*    height: 400px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*instagram*/
 .instagram {
     border: 2px solid red;
-    /*height: 664px;*/
+    background-color: #f6edde;
+    height: 462px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
+    text-decoration: none;
 }
 
 .instagram__img-container {
+    width: 100%;
     background-color: #cae941;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
-    /*justify-content: stretch;*/
 
 
 }
 
 .instagram__img-wrap {
     border: 5px solid rebeccapurple;
-    width: 20%;
     display: flex;
- justify-content:space-between;
+    justify-content: space-between;
+    width: 100%;
+}
 
-
-
+.instagram__img {
+    width: 100%;
 }
 
 .instagram__link {
@@ -523,10 +632,19 @@ h2 {
     font-weight: 800;
     line-height: 1.67;
     letter-spacing: -0.48px;
-    list-style: none;
     text-decoration: none;
     font-size: 24px;
 }
 
-.instagram__img {
+/*.instagram__link:hover{*/
+/*    color: inherit;*/
+}
+
+
+.footer {
+    background-color: #f7ae3b;
+}
+
+.footer__bottom {
+    background-color: #6a2b1f
 }
