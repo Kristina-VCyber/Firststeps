@@ -32,12 +32,12 @@ ul {
 
 a {
     display: inline-block;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
-    color: inherit;
-}
+    text-decoration: none;}
+
 
 html,
 body {
@@ -190,6 +190,10 @@ h2 {
     text-decoration: none;
     font-size: 50px;
     color: #f7ae3b;
+}
+
+h4{
+    font-family: Muli-ExtraBold, sans-serif;
 }
 
 /*section smoothies*/
@@ -574,13 +578,6 @@ h2 {
 
 
 
-/*.instagram__img{*/
-/*    width: 555px;*/
-/*    height: 400px;*/
-/*}*/
-
-
-
 
 
 
@@ -638,13 +635,59 @@ h2 {
 
 /*.instagram__link:hover{*/
 /*    color: inherit;*/
-}
+
 
 
 .footer {
+    border: 2px solid red;
     background-color: #f7ae3b;
 }
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title{
+    font-size: 26px;
+    color: white;
+
+}
+.footer__information{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information__list{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+
+}
+
+.information__list-link{
+text-decoration: none;
+    color: #1e1e1e;
+}
+
+.payment__container{
+    border: 2px solid red;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+
+}
+
+
+
 
 .footer__bottom {
+    border: 2px solid ivory;
     background-color: #6a2b1f
 }
