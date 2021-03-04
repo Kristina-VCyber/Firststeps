@@ -673,7 +673,7 @@ h4{
 
 .information__list-link{
 text-decoration: none;
-    color: #1e1e1e;
+    color: #6d450c;
 }
 
 .payment__container{
@@ -681,13 +681,43 @@ text-decoration: none;
     flex-flow: row wrap;
     justify-content: space-between;
 
-
+}
+.subscription{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
-
-
+.subscription__form-input{
+    width: 495px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #f6ab3b;
+}
+.subscription__form-btn{
+    border:2px solid #f6ab3b;
+    width: 105px;
+    /*height: 12px;*/
+    text-transform: uppercase;
+    font-family: Muli-ExtraBold serif;
+    font-size: 18px;
+background-color: #f6ab3b;
+    color:#6d450c;
+}
+.subscription__social-list{
+    display: flex;
+}
 .footer__bottom {
     border: 2px solid ivory;
-    background-color: #6a2b1f
+    background-color: #6a2b1f;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    align-items: center;
+}
+.footer__bottom-text{
+    font-size: 13px;
+    color: #af8a82;
 }
