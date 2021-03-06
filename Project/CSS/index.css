@@ -641,11 +641,10 @@ h4 {
 
 .footer__logo {
     border: 2px solid blue;
+    display: flex;
+    justify-content: center;
     align-self: center;
     flex: 3 0 300px;
-    /*align-self: center;*/
-    /* display: flex;*/
-    /*justify-content: center;*/
 }
 
 .footer__title {
@@ -653,7 +652,7 @@ h4 {
     color: white;
 }
 
-/*infornation*/
+/*information*/
 .footer__information {
     border: 2px solid deeppink;
     display: flex;
@@ -674,6 +673,8 @@ h4 {
 .information__list-link {
     text-decoration: none;
     color: #6d450c;
+    font-weight: bold;
+    font-family: Muli-Bold, sans-serif;
 }
 
 /*payment*/
@@ -688,43 +689,73 @@ h4 {
 }
 
 .payment__container {
-    /*padding-right: 71px;*/
     border: 2px solid red;
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: space-between;
+    /*min-height:139px ;*/
+    /*align-self: center;*/
+    flex-basis: 241px;
 
 }
 
-/*follow us*/
-.subscription {
+.payment__img {
+    padding-right: 13px;
+}
+
+/*subscription follow us*/
+.footer__subscription {
     border: 2px solid cyan;
     display: flex;
-    /*flex-direction: column;*/
-    flex-wrap: wrap;
-    flex: 4 0 400px;
+    flex: 3 0 300px;
+    flex-flow: column wrap;
+    padding-top: 79px;
+    padding-bottom: 93px;
+    padding-right: 100px;
+    justify-content: space-between;
 }
 
+.subscription__form {
+    border: 2px solid darkslategrey;
+}
 
 .subscription__form-input {
     width: 495px;
     height: 60px;
     border-radius: 30px;
     border: 2px solid #f6ab3b;
+    font-family: Muli-Bold, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .subscription__form-btn {
     border: 2px solid #f6ab3b;
-    width: 105px;
-    /*height: 12px;*/
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Muli-Bold sans-serif;
+    font-family: Muli-Bold, sans-serif;
     font-size: 18px;
+    font-weight: 800;
     background-color: #f6ab3b;
     color: #6d450c;
 }
 
-.subscription__social-list {
+.subscription__form-btn-list-wrap {
+    border: 2px solid orangered;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 185px;
+    padding-right: 52px;
+}
+
+.subscription__social-list {
+    border: 2px solid mediumpurple;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 130px;
 }
 
 

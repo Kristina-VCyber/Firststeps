@@ -264,7 +264,7 @@
                 <img class="logo__img" src="./assets/images/footer/logo_icon_.png" alt="logo">
             </a>
         </div>
-<!--footer information-->
+        <!--footer information-->
         <div class="footer__information information">
             <h4 class="footer__title">Information</h4>
             <ul class="information__list">
@@ -290,26 +290,70 @@
         </div>
         <div class="footer__subscription subscription">
             <h4 class="footer__title">Don't miss out!</h4>
-            <div class="subscription__wrap">
-                <form class="subscription__form" action="">
-                    <input class="subscription__form-input" type="email" name="subscribe" id="subscribe"
-                           placeholder="Subscribe to our newsletter"/>
-                    <button class="subscription__form-btn" type="submit">FOLLOW US</button>
-                </form>
+            <!--            TODO-форма и кнопка в одном div->
+                        <div class="subscription__wrap">
+                            <form class="subscription__form " action="">
+                                    <input class="subscription__form-input" type="email" name="subscribe" id="subscribe"
+                                           placeholder="Subscribe to our newsletter"/>
+                                <div class="subscription__form-btn-list-wrap">
+                                    <button class="subscription__form-btn" type="submit">FOLLOW US</button>
+                                    <ul class="subscription__social-list">
+                                        <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                                        src="./assets/images/footer/facebook_icon.png"
+                                                                                        alt="facebook"></li>
+                                        <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                                        src="./assets/images/footer/pinterest_icon.png"
+                                                                                        alt="pinterest">
+                                        </li>
+                                        <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                                        src="./assets/images/footer/instagram.png"
+                                                                                        alt="instagram">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="subscription__wrap">
+            <!--            TODO flex space between работает, если разделить форму и кнопку-->
+
+            <form class="subscription__form " action="">
+                <input class="subscription__form-input" type="email" name="subscribe" id="subscribe"
+                       placeholder="Subscribe to our newsletter"/>
+            </form>
+            <div class="subscription__form-btn-list-wrap">
+                <button class="subscription__form-btn" type="submit">FOLLOW US</button>
+                <ul class="subscription__social-list">
+                    <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                    src="./assets/images/footer/facebook_icon.png"
+                                                                    alt="facebook"></li>
+                    <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                    src="./assets/images/footer/pinterest_icon.png"
+                                                                    alt="pinterest">
+                    </li>
+                    <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                    src="./assets/images/footer/instagram.png"
+                                                                    alt="instagram">
+                    </li>
+                </ul>
             </div>
-            <ul class="subscription__social-list">
-                <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                src="./assets/images/footer/facebook_icon.png"
-                                                                alt="facebook"></li>
-                <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                src="./assets/images/footer/pinterest_icon.png"
-                                                                alt="pinterest">
-                </li>
-                <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                src="./assets/images/footer/instagram.png"
-                                                                alt="instagram">
-                </li>
-            </ul>
+
+            <!--            </div>-->
+
+
+            <!--            <ul class="subscription__social-list">-->
+            <!--                <li class="subscription__social-list-item"><img class="subscription__img"-->
+            <!--                                                                src="./assets/images/footer/facebook_icon.png"-->
+            <!--                                                                alt="facebook"></li>-->
+            <!--                <li class="subscription__social-list-item"><img class="subscription__img"-->
+            <!--                                                                src="./assets/images/footer/pinterest_icon.png"-->
+            <!--                                                                alt="pinterest">-->
+            <!--                </li>-->
+            <!--                <li class="subscription__social-list-item"><img class="subscription__img"-->
+            <!--                                                                src="./assets/images/footer/instagram.png"-->
+            <!--                                                                alt="instagram">-->
+            <!--                </li>-->
+            <!--            </ul>-->
         </div>
     </div>
     <div class="footer__bottom">
