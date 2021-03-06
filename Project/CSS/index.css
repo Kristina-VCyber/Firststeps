@@ -708,21 +708,47 @@ background-color: #f6ab3b;
 .subscription__social-list{
     display: flex;
 }
+
+
+/*fotter bottom*/
 .footer__bottom {
     border: 2px solid ivory;
     background-color: #6a2b1f;
     display: flex;
-    justify-content: space-between;
     color: #ffffff;
     font-size: 16px;
-    align-items: center;
 
 }
+/*rights reserved text*/
+.footer__bottom-text-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 200px;
+}
+.footer__bottom-text{
+    border: 2px solid greenyellow;
+    font-size: 13px;
+    color: #af8a82;
+}
+/*go top link */
 .bottom-to-top{
     border: 5px solid yellow;
     padding-right: 101px;
+    display: flex;
+    align-items: center;
 }
-.footer__bottom-text{
-    font-size: 13px;
-    color: #af8a82;
+.top__link-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-to-top__link{
+    height: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    background-color: #f2662f;
+    font-size: 16px;
+    border-radius: 5px;
 }
