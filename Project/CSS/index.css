@@ -36,7 +36,8 @@ a {
 }
 
 a:hover {
-    text-decoration: none;}
+    text-decoration: none;
+}
 
 
 html,
@@ -192,7 +193,7 @@ h2 {
     color: #f7ae3b;
 }
 
-h4{
+h4 {
     font-family: Muli-ExtraBold, sans-serif;
 }
 
@@ -525,34 +526,36 @@ h4{
     line-height: 2.5;
 
 }
-.testimonials__arrows{
+
+.testimonials__arrows {
     border: 2px solid papayawhip;
     display: flex;
     justify-content: space-around;
     min-width: 200px;
 }
+
 /*blog section*/
-.blog{
+.blog {
     border: 2px solid red;
     background-color: #f6edde;
     height: 798px;
     display: flex;
     flex-direction: column;
-   justify-content: space-around;
-
+    justify-content: space-around;
 
 
     /*align-items: baseline;*/
 }
 
-.blog__container{
+.blog__container {
     border: 2px solid greenyellow;
     /*min-width: 1140px;*/
     display: flex;
     justify-content: center;
 
 }
-.blog__article{
+
+.blog__article {
     border: 2px solid rebeccapurple;
     display: flex;
     flex-direction: column;
@@ -571,21 +574,10 @@ h4{
     width: 472px;
     height: 122px;
 }
+
 .blog__article-date {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*instagram*/
@@ -633,79 +625,105 @@ h4{
     font-size: 24px;
 }
 
-/*.instagram__link:hover{*/
-/*    color: inherit;*/
 
-
-
+/*footer*/
 .footer {
     border: 2px solid red;
     background-color: #f7ae3b;
 }
-.footer__top{
+
+/*footer top*/
+.footer__top {
+    border: 3px solid green;
+    min-height: 372px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer-logo{
-    display: flex;
-    flex-direction: column;
 }
 
-.footer__title{
+.footer__logo {
+    border: 2px solid blue;
+    align-self: center;
+    flex: 3 0 300px;
+    /*align-self: center;*/
+    /* display: flex;*/
+    /*justify-content: center;*/
+}
+
+.footer__title {
     font-size: 26px;
     color: white;
-
 }
-.footer__information{
-    border: 2px solid red;
+
+/*infornation*/
+.footer__information {
+    border: 2px solid deeppink;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 100px;
+    padding-right: 154px;
+    padding-top: 79px;
+    padding-bottom: 108px;
+}
+
+.information__list {
+    border: 2px solid chartreuse;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.information__list{
-    display: flex;
-    flex-direction: column;
-   justify-content: space-between;
-
-}
-
-.information__list-link{
-text-decoration: none;
+.information__list-link {
+    text-decoration: none;
     color: #6d450c;
 }
 
-.payment__container{
-    border: 2px solid red;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-}
-.subscription{
+/*payment*/
+.footer__payment {
+    border: 2px solid black;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex: 2 0 250px;
+    padding-top: 79px;
+    padding-right: 166px;
+    padding-bottom: 93px;
+}
+
+.payment__container {
+    /*padding-right: 71px;*/
+    border: 2px solid red;
+
+
+}
+
+/*follow us*/
+.subscription {
+    border: 2px solid cyan;
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    flex: 4 0 400px;
 }
 
 
-.subscription__form-input{
+.subscription__form-input {
     width: 495px;
     height: 60px;
     border-radius: 30px;
     border: 2px solid #f6ab3b;
 }
-.subscription__form-btn{
-    border:2px solid #f6ab3b;
+
+.subscription__form-btn {
+    border: 2px solid #f6ab3b;
     width: 105px;
     /*height: 12px;*/
+    text-decoration: none;
     text-transform: uppercase;
-    font-family: Muli-ExtraBold serif;
+    font-family: Muli-Bold sans-serif;
     font-size: 18px;
-background-color: #f6ab3b;
-    color:#6d450c;
+    background-color: #f6ab3b;
+    color: #6d450c;
 }
-.subscription__social-list{
+
+.subscription__social-list {
     display: flex;
 }
 
@@ -719,32 +737,37 @@ background-color: #f6ab3b;
     font-size: 16px;
 
 }
+
 /*rights reserved text*/
-.footer__bottom-text-wrap{
+.footer__bottom-text-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex: 1 0;
     padding-left: 200px;
 }
-.footer__bottom-text{
+
+.footer__bottom-text {
     border: 2px solid greenyellow;
     font-size: 13px;
     color: #af8a82;
 }
+
 /*go top link */
-.bottom-to-top{
+.bottom-to-top {
     border: 5px solid yellow;
     padding-right: 101px;
     display: flex;
     align-items: center;
 }
-.top__link-wrap{
+
+.top__link-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bottom-to-top__link{
+
+.bottom-to-top__link {
     height: 50px;
     min-width: 50px;
     max-width: 50px;
