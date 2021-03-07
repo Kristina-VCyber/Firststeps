@@ -238,7 +238,7 @@ h4 {
     justify-content: space-between;
 }
 
-.advantage__figure {
+.advantage__img-wrap {
     border: 1px solid red;
     width: 252px;
     height: 181px;
@@ -249,7 +249,7 @@ h4 {
 
 }
 
-.advantage__figcaption {
+.advantage__title {
     font-family: Muli-ExtraBold, sans-serif;
     font-size: 25px;
     font-weight: 800;
@@ -273,18 +273,16 @@ h4 {
 }
 
 .about__img-wrap {
-    display: flex;
     padding-top: 64px;
     padding-right: 142px;
     padding-left: 143px;
 }
 
 .about__img {
-    min-width: 691px;
-    min-height: 818px;
+    /*min-width: 691px;*/
+    /*min-height: 818px;*/
     border: 1px solid;
 }
-
 .about__benefits {
     border: 2px solid rebeccapurple;
     color: #ffffff;
@@ -296,15 +294,14 @@ h4 {
     padding-bottom: 94px;
 
 }
-
 .about__title {
     border: 1px solid red;
+    min-width: 588px;
     font-size: 55px;
     line-height: 1.09;
     text-align: left;
     color: #ffffff;
 }
-
 .about__title--green {
     color: #cae941;
 }
@@ -339,22 +336,19 @@ h4 {
 .products {
     border: 1px solid red;
     display: flex;
-    flex-direction: row;
 }
-
-
 .products-menu {
     border: 1px solid red;
-    width: 25%;
-    height: 720px;
     font-family: Muli-Bold, sans-serif;
     font-size: 24px;
     line-height: 1.6;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    flex: 0 1 25%;
+    padding-top: 129px;
+    padding-bottom:79px;
 }
 
 /*TODO уменьшить расстояние от картинки до текста*/
@@ -362,6 +356,7 @@ h4 {
     border: 1px solid red;
     width: 119px;
     height: 303px;
+    margin-bottom: 34px;
 }
 
 /*white text positioning*/
@@ -370,8 +365,6 @@ h4 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
-
 }
 
 
@@ -381,57 +374,44 @@ h4 {
     font-style: italic;
     font-weight: normal;
     font-family: Muli-Regular, sans-serif;
-
-
 }
-
 .products__btn {
     width: 204px;
     height: 60px;
+    margin-top:65px;
     background: none;
     border-radius: 30px;
     border: solid 2px #ffffff;
-
 }
-
-
 .products__menu-brown {
     background-color: #602a1a;
-
 }
-
-
 .products__menu-green {
     background-color: #188b70;
-
 }
-
 .products__menu-yellow {
     background-color: #f5b33f;
-
 }
-
 .products__menu-orange {
     background-color: #c54317;
-
 }
 
-/*blog section*/
+
+/*blog story*/
 .story {
     display: flex;
-    height: 881px;
+    justify-content: space-between;
     background-color: #f6edde;
+    border: 2px solid yellow;
+    padding:120px 310px 160px 308px;
 }
 
 .story__container {
     border: 2px solid rebeccapurple;
-    width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
-
+    justify-content: center;
 }
 
 .story__wrap {
@@ -440,18 +420,15 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
-
 .story__title {
     width: 219px;
 }
 
 /*TODO Отображение текста не совпадает с макетом*/
 .story__text {
-    width: 511px;
+    max-width:511px;
 }
-
 .story__btn {
     width: 301px;
     height: 60px;
@@ -461,15 +438,13 @@ h4 {
 
 .story__img-wrap {
     border: 2px solid rebeccapurple;
-    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .story__img {
-    width: 585px;
-    height: 601px;
+    min-width: 585px;
+    min-height: 601px;
     margin-left: 65px;
 }
 
@@ -478,11 +453,9 @@ h4 {
 
 .testimonials {
     background-color: #653018;
-    width: 100%;
-    height: 720px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -490,7 +463,6 @@ h4 {
     border: 2px solid greenyellow;
     min-width: 734px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
@@ -506,11 +478,9 @@ h4 {
 
 .testimonials__quote-wrap {
     border: 2px solid red;
-    width: 455px;
-    height: 130px;
+    max-width: 455px;
     color: #ffffff;
     text-align: center;
-    font-family: Muli-Regular, sans-serif;
     font-size: 18px;
     line-height: 1.94;
     display: flex;
@@ -524,7 +494,6 @@ h4 {
 
 .testimonials__quote-cite {
     color: #f7ae3b;
-    /*font-weight: 600;*/
     font-style: italic;
     line-height: 2.5;
 
@@ -533,15 +502,16 @@ h4 {
 .testimonials__arrows {
     border: 2px solid papayawhip;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     min-width: 200px;
 }
+
+
 
 /*blog section*/
 .blog {
     border: 2px solid red;
     background-color: #f6edde;
-    height: 798px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -552,7 +522,6 @@ h4 {
 
 .blog__container {
     border: 2px solid greenyellow;
-    /*min-width: 1140px;*/
     display: flex;
     justify-content: center;
 
@@ -575,11 +544,10 @@ h4 {
 
 .blog__article-text {
     width: 472px;
-    height: 122px;
 }
 
 .blog__article-date {
-
+align-self: flex-start;
 }
 
 
@@ -595,7 +563,7 @@ h4 {
 .instagram__img-container {
     border: 3px solid #cae941;
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
 }
 
 .instagram__img-wrap {
@@ -603,9 +571,6 @@ h4 {
     display: flex;
     flex:1 1 20%;
     min-height: 100%;
-
-    /*justify-content: space-between;*/
-    width: 100%;
 }
 
 .instagram__img {

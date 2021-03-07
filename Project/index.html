@@ -85,37 +85,37 @@
         nut butter, seeds,tea, chocolate, herbal supplements, or nutritional supplements.
     </p>
     <div class="smoothies__advantage advantage">
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/plant-based-icon.png" alt="plant_based">
-            <h4 class="advantage__figcaption">Plant Based</h4>
+            <h4 class="advantage__title">Plant Based</h4>
         </div>
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/vegan-icon.png" alt="vegan">
-            <h4 class="advantage__figcaption">Vegan</h4>
+            <h4 class="advantage__title">Vegan</h4>
         </div>
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/paleo-icon.png" alt="paleo">
-            <h4 class="advantage__figcaption">Paleo</h4>
+            <h4 class="advantage__title">Paleo</h4>
         </div>
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/gluten-free-icon.png" alt="gluten_free">
-            <h4 class="advantage__figcaption">Gluten-free</h4>
+            <h4 class="advantage__title">Gluten-free</h4>
         </div>
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/corn-free-icon.png" alt="corn_free">
-            <h4 class="advantage__figcaption">Corn-Free</h4>
+            <h4 class="advantage__title">Corn-Free</h4>
         </div>
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/soy-free-icon.png" alt="soy_free">
-            <h4 class="advantage__figcaption">Soy-Free</h4>
+            <h4 class="advantage__title">Soy-Free</h4>
         </div>
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/ayurvedic-icon.png" alt="ayurvedic">
-            <h4 class="advantage__figcaption">Ayurvedic</h4>
+            <h4 class="advantage__title">Ayurvedic</h4>
         </div>
-        <div class="advantage__figure">
+        <div class="advantage__img-wrap">
             <img class="advantage__img" src="./assets/images/smoothies/with-love-icon.png" alt="made_with_love">
-            <h4 class="advantage__figcaption">Made With Love</h4>
+            <h4 class="advantage__title">Made With Love</h4>
         </div>
     </div>
 </section>
@@ -220,9 +220,11 @@
 
 
 <section class="blog">
-    <h2 class="blog__title title"> Our blog</h2>
     <div class="blog__container">
-        <img class="blog__img" src="./assets/images/blog/blog_img.png" alt="blog_img">
+        <div class="blog__img-title-wrap">
+            <h2 class="blog__title title"> Our blog</h2>
+            <img class="blog__img" src="./assets/images/blog/blog_img.png" alt="blog_img">
+        </div>
         <article class="blog__article">
             <h3 class="blog__article-title">ASAFOETIDA - THE NEXT TURMERIC?</h3>
             <time class="blog__article-date">Jun 16, 2020</time>
@@ -290,53 +292,53 @@
         </div>
         <div class="footer__subscription subscription">
             <h4 class="footer__title">Don't miss out!</h4>
-            <!--            TODO-форма и кнопка в одном div->
-                        <div class="subscription__wrap">
-                            <form class="subscription__form " action="">
-                                    <input class="subscription__form-input" type="email" name="subscribe" id="subscribe"
-                                           placeholder="Subscribe to our newsletter"/>
-                                <div class="subscription__form-btn-list-wrap">
-                                    <button class="subscription__form-btn" type="submit">FOLLOW US</button>
-                                    <ul class="subscription__social-list">
-                                        <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                                        src="./assets/images/footer/facebook_icon.png"
-                                                                                        alt="facebook"></li>
-                                        <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                                        src="./assets/images/footer/pinterest_icon.png"
-                                                                                        alt="pinterest">
-                                        </li>
-                                        <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                                        src="./assets/images/footer/instagram.png"
-                                                                                        alt="instagram">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </form>
-                        </div>
 
-                        <div class="subscription__wrap">
+            <div class="subscription__wrap">
+                <form class="subscription__form " action="">
+                    <input class="subscription__form-input" type="email" name="subscribe" id="subscribe"
+                           placeholder="Subscribe to our newsletter"/>
+                    <div class="subscription__form-btn-list-wrap">
+                        <button class="subscription__form-btn" type="submit">FOLLOW US</button>
+                        <ul class="subscription__social-list">
+                            <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                            src="./assets/images/footer/facebook_icon.png"
+                                                                            alt="facebook"></li>
+                            <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                            src="./assets/images/footer/pinterest_icon.png"
+                                                                            alt="pinterest">
+                            </li>
+                            <li class="subscription__social-list-item"><img class="subscription__img"
+                                                                            src="./assets/images/footer/instagram.png"
+                                                                            alt="instagram">
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+            <!--                        <div class="subscription__wrap">-->
             <!--            TODO flex space between работает, если разделить форму и кнопку-->
 
-            <form class="subscription__form " action="">
-                <input class="subscription__form-input" type="email" name="subscribe" id="subscribe"
-                       placeholder="Subscribe to our newsletter"/>
-            </form>
-            <div class="subscription__form-btn-list-wrap">
-                <button class="subscription__form-btn" type="submit">FOLLOW US</button>
-                <ul class="subscription__social-list">
-                    <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                    src="./assets/images/footer/facebook_icon.png"
-                                                                    alt="facebook"></li>
-                    <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                    src="./assets/images/footer/pinterest_icon.png"
-                                                                    alt="pinterest">
-                    </li>
-                    <li class="subscription__social-list-item"><img class="subscription__img"
-                                                                    src="./assets/images/footer/instagram.png"
-                                                                    alt="instagram">
-                    </li>
-                </ul>
-            </div>
+            <!--            <form class="subscription__form " action="">-->
+            <!--                <input class="subscription__form-input" type="email" name="subscribe" id="subscribe"-->
+            <!--                       placeholder="Subscribe to our newsletter"/>-->
+            <!--            </form>-->
+            <!--            <div class="subscription__form-btn-list-wrap">-->
+            <!--                <button class="subscription__form-btn" type="submit">FOLLOW US</button>-->
+            <!--                <ul class="subscription__social-list">-->
+            <!--                    <li class="subscription__social-list-item"><img class="subscription__img"-->
+            <!--                                                                    src="./assets/images/footer/facebook_icon.png"-->
+            <!--                                                                    alt="facebook"></li>-->
+            <!--                    <li class="subscription__social-list-item"><img class="subscription__img"-->
+            <!--                                                                    src="./assets/images/footer/pinterest_icon.png"-->
+            <!--                                                                    alt="pinterest">-->
+            <!--                    </li>-->
+            <!--                    <li class="subscription__social-list-item"><img class="subscription__img"-->
+            <!--                                                                    src="./assets/images/footer/instagram.png"-->
+            <!--                                                                    alt="instagram">-->
+            <!--                    </li>-->
+            <!--                </ul>-->
+            <!--            </div>-->
 
             <!--            </div>-->
 
