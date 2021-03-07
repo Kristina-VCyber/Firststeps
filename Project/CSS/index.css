@@ -91,6 +91,11 @@ header {
 /*logo*/
 .logo {
     border: 1px solid red;
+
+}
+.header__logo{
+    position:absolute;
+    left: 851px;
 }
 
 /*personal*/
@@ -167,6 +172,7 @@ header {
 .header__btn {
     height: 70px;
     width: 280px;
+    position: relative;
 }
 
 .btn {
@@ -271,7 +277,6 @@ h4 {
 }
 
 .about__img-wrap {
-    padding-top: 64px;
     padding-right: 142px;
     padding-left: 143px;
     position: relative;
@@ -304,6 +309,9 @@ h4 {
     text-align: left;
     color: #ffffff;
 }
+/*.about__title:after{*/
+/*    */
+/*}*/
 
 .about__title--green {
     color: #cae941;
@@ -317,8 +325,6 @@ h4 {
     flex-flow: column wrap;
     justify-content: space-between;
     padding-left: 29px;
-
-
 }
 
 .text--bold {
@@ -529,8 +535,6 @@ h4 {
     flex-direction: column;
     justify-content: space-around;
 
-
-    /*align-items: baseline;*/
 }
 
 .blog__container {
@@ -770,8 +774,11 @@ h4 {
     border: 2px solid ivory;
     background-color: #6a2b1f;
     display: flex;
+    justify-content: center;
     color: #ffffff;
     font-size: 16px;
+    padding-top: 26px;
+    padding-bottom: 21px;
 
 }
 
@@ -780,8 +787,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 0;
-    padding-left: 100px;
+    flex: 1;
 }
 
 .footer__bottom-text {
@@ -793,9 +799,9 @@ h4 {
 /*go top link */
 .bottom-to-top {
     border: 5px solid yellow;
-    padding-right: 101px;
     display: flex;
     align-items: center;
+    padding-right: 164px;
 }
 
 .top__link-wrap {
@@ -811,4 +817,8 @@ h4 {
     background-color: #f2662f;
     font-size: 16px;
     border-radius: 5px;
+    position: fixed;
+    bottom: 50px;
+    right:101px;
+
 }
