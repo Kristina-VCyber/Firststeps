@@ -308,10 +308,20 @@ h4 {
     line-height: 1.09;
     text-align: left;
     color: #ffffff;
+    position:relative;
+
 }
-/*.about__title:after{*/
-/*    */
-/*}*/
+.about__title:after{
+    content:"";
+    display: block;
+    width: 450px;
+    height: 13px;
+    background: url("../assets/images/about/line.png")center;
+    /*background-color: #0aa566;*/
+    position:absolute;
+    top:0;
+    left:0;
+}
 
 .about__title--green {
     color: #cae941;
