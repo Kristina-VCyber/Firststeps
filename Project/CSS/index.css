@@ -311,16 +311,15 @@ h4 {
     position:relative;
 
 }
-.about__title:after{
+.about__title::after{
     content:"";
     display: block;
     width: 450px;
     height: 13px;
     background: url("../assets/images/about/line.png")center;
-    /*background-color: #0aa566;*/
     position:absolute;
-    top:0;
-    left:0;
+    bottom:-8px;
+    left:69px;
 }
 
 .about__title--green {
@@ -467,8 +466,18 @@ h4 {
     border: 2px solid rebeccapurple;
     display: flex;
     align-items: center;
+    position: relative;
 }
-
+.story__img-wrap::before{
+    content:"";
+    display: block;
+    width: 290px;
+    height: 216px;
+    background: url("../assets/images/story/stamp_.png")center;
+    position:absolute;
+    top:42px;
+    left:-95px;
+}
 .story__img {
     min-width: 585px;
     min-height: 601px;
@@ -486,7 +495,30 @@ h4 {
     align-items: center;
     padding-top: 117px;
     padding-bottom: 80px;
+    position: relative;
 }
+.testimonials::before{
+    content:"";
+    display: block;
+    width: 410px;
+    height: 301px;
+    background: url("../assets/images/testimonials/dots.png")center;
+    position:absolute;
+    top:-80px;
+    right:58px;
+}
+.testimonials::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 764px;
+    height: 148px;
+    background: url("../assets/images/testimonials/sarahA.png")center;
+    top:30%;
+    left:438px;
+
+}
+
 
 .testimonials__wrap {
     border: 2px solid greenyellow;
@@ -496,10 +528,7 @@ h4 {
     align-items: center;
     padding-bottom: 121px;
     padding-top: 118px;
-}
-
-.testimonials__title {
-
+    z-index: 1;
 }
 
 .testimonials__title--uppercase {
@@ -620,6 +649,17 @@ h4 {
     display: flex;
     flex: 1 1 20%;
     min-height: 100%;
+    position: relative;
+}
+.instagram__img-wrap::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../assets/images/instagram/icons/instaIcon_white.png")center;
+    width: 26px;
+    height: 26px;
+    bottom:20px;
+    right:22px;
 }
 
 .instagram__img {
@@ -634,8 +674,19 @@ h4 {
     text-decoration: none;
     font-size: 24px;
     margin-bottom: 45px;
+    position: relative;
+    min-width: 26px;
 }
-
+.instagram__link::before{
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../assets/images/instagram/icons/insta_icon.png");
+    position: absolute;
+    top:8px;
+    left: -38px;
+}
 
 /*footer*/
 .footer {
@@ -737,8 +788,18 @@ h4 {
 
 .subscription__form {
     border: 2px solid darkslategrey;
+    position: relative;
 }
-
+.subscription__form::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 19px;
+    position: absolute;
+    background: url("../assets/images/footer/letter_icon.png")center;
+    top:21px;
+    left: 23px;
+}
 .subscription__form-input {
     width: 495px;
     height: 60px;
@@ -756,8 +817,18 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 27px 52px 12px 185px;
+    position: relative;
 }
-
+.subscription__form-btn-list-wrap::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 43px;
+    background: url("../assets/images/footer/arrow_icon.png");
+    top: 12px;
+    left:120px;
+}
 
 .subscription__form-btn {
     border: 2px solid #f6ab3b;
