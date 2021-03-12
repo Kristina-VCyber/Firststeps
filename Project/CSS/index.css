@@ -59,6 +59,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 /*menu*/
@@ -95,15 +96,28 @@ header {
 }
 .header__logo{
     position:absolute;
-    left: 851px;
+    top:54px;
+    left: 843px;
 }
 
 /*personal*/
 .header__right-block {
+    border: 2px solid olive;
     width: 420px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.header__right-block::before{
+    content: "";
+    display: block;
+    width: 47px;
+    height: 2px;
+    position: absolute;
+    background: url("../assets/images/header/line_.png");
+    top:17px;
+    left: 50%;
 }
 
 .personal__list {
@@ -173,6 +187,16 @@ header {
     height: 70px;
     width: 280px;
     position: relative;
+}
+.header__btn::after{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 30px;
+    height: 16px;
+    background: url("../assets/images/header/arrow.png");
+    top: 27px;
+    left:211px;
 }
 
 .btn {
@@ -346,6 +370,18 @@ h4 {
     border-radius: 30px;
     border: solid 2px #f8b231;
     background: none;
+    position: relative;
+}
+.about__btn::after{
+content:"";
+    display: block;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    background: url("../assets/images/about/arrow.png");
+    top: 21px;
+    right: 29px ;
+
 }
 
 
@@ -402,6 +438,14 @@ h4 {
     background: none;
     border-radius: 30px;
     border: solid 2px #ffffff;
+    position: relative;
+}
+.products__btn::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 16px;
+    background: url("../assets/images/products/arrow_white.png");
 }
 
 .products__menu-brown {
@@ -460,8 +504,15 @@ h4 {
     height: 60px;
     background-color: #0aa566;
     border-radius: 30px;
+    position: relative;
 }
-
+.story__btn::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 16px;
+    background: url("../assets/images/story/arrow.png");
+}
 .story__img-wrap {
     border: 2px solid rebeccapurple;
     display: flex;
@@ -591,6 +642,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    z-index: 1;
 }
 
 .blog__article {
@@ -601,6 +653,17 @@ h4 {
     align-items: flex-end;
     padding-bottom: 45px;
     padding-left: 61px;
+    position: relative;
+}
+.blog__article::before{
+    content: "";
+    display: block;
+    width: 687px;
+    height: 12px;
+    background: url("../assets/images/blog/line.png");
+    top:167px;
+    right: 0;
+    position: absolute;
 }
 
 .blog__article-title {
@@ -611,8 +674,20 @@ h4 {
 }
 
 .blog__article-text {
+    border: 2px solid palegreen;
     width: 472px;
     padding-top:26px;
+    position: relative;
+}
+.blog__article-text::after{
+    content: "";
+    display: block;
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    background: url("../assets/images/blog/arrow.png");
+    bottom:12px;
+    left:45%;
 }
 
 .blog__article-date {
@@ -626,7 +701,6 @@ h4 {
     font-style: italic;
     font-weight: 800;
 }
-
 
 /*instagram*/
 .instagram {
