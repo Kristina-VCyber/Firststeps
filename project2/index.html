@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="../project2/index.css">
+</head>
+<body>
+<form class="feedback-form__form" action="">
+<header class="feedback-form__header header">
+    <button class="header__btn">X</button>
+    <ul class="header__breadcrumbs-list breadcrumbs ">
+        <li class="breadcrumbs__list-item"><a  class="breadcrumbs__link" href="">Главная</a></li>
+        <li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="">Контакты</a></li>
+        <li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="">Форма обратной связи</a></li>
+    </ul>
+    <h1 class="header__title">Форма обратной связи</h1>
+</header>
+    <div class="feedback-form__input-wrap">
+            <input  class="feedback-form__input--focus" type="text" name="name" id="name" placeholder="Иванов Иван Иванович">
+            <input  class="feedback-form__input" type="email" name="email" id="email" placeholder="Введите Ваш Email">
+            <input class="feedback-form__input" type="tel" name="telephone" id="telephone" placeholder="Введите Ваш телефон">
+            <textarea class="feedback-form__textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Введите Ваше сообщение"></textarea>
+    </div>
+
+    <div class="feedback-form__captcha captcha">
+        <div class="captcha__input-wrap">
+        <input type="text" name="captcha" id="captcha">
+        <span class="captcha__text"> Введитее код на картинке справа</span>
+        </div>
+        <div class="captcha__img-wrap">
+            <img src="../project2/assets/image/captcha/captcha.png" alt="captchaImg">
+        </div>
+    </div>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
