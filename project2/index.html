@@ -9,26 +9,30 @@
 <body>
 <form class="feedback-form__form" action="">
 <header class="feedback-form__header header">
-    <button class="header__btn">X</button>
+    <div class="header__btn-wrap">
+    <button class="header__btn"></button>
+    </div>
     <div class="header__breadcrumbs-wrap">
     <ul class="header__breadcrumbs-list breadcrumbs ">
         <li class="breadcrumbs__list-item"><a  class="breadcrumbs__link text" href="">Главная</a></li>
         <li class="breadcrumbs__list-item"><a class="breadcrumbs__link text" href="">Контакты</a></li>
-        <li class="breadcrumbs__list-item"><a class="breadcrumbs__link text" href="">Форма обратной связи</a></li>
+        <li class="breadcrumbs__list-item"><a class="breadcrumbs__link--active text" href="">Форма обратной связи</a></li>
     </ul>
     </div>
     <h1 class="header__title">Форма обратной связи</h1>
 </header>
-    <div class="feedback-form__input-wrap">
-            <input  class="feedback-form__input--focus" type="text" name="name" id="name" placeholder="Иванов Иван Иванович">
-            <input  class="feedback-form__input" type="email" name="email" id="email" placeholder="Введите Ваш Email">
-            <input class="feedback-form__input" type="tel" name="telephone" id="telephone" placeholder="Введите Ваш телефон">
-            <textarea class="feedback-form__textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Введите Ваше сообщение"></textarea>
+    <div class="feedback-form__input-container">
+        <div class="feedback-form__input-wrap" >
+            <input  class="feedback-form__input--focus feedback-form" type="text" name="name" id="name" placeholder="Иванов Иван Иванович">
+            <input  class="feedback-form__input feedback-form" type="email" name="email" id="email" placeholder="Введите Ваш Email">
+            <input class="feedback-form__input feedback-form" type="tel" name="telephone" id="telephone" placeholder="Введите Ваш телефон">
+            <textarea class="feedback-form__textarea " name="textarea" id="textarea" cols="30" rows="10" placeholder="Введите Ваше сообщение"></textarea>
+        </div>
     </div>
 
     <div class="feedback-form__captcha captcha">
         <div class="captcha__input-wrap">
-        <input type="text" name="captcha" id="captcha">
+        <input class="captcha__input feedback-form" type="text" name="captcha" id="captcha">
         <span class="captcha__text text"> Введите код на картинке справа</span>
         </div>
         <div class="captcha__img-wrap">
