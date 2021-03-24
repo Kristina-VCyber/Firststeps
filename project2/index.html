@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../project2/normalize.css">
 </head>
 <body>
-<form class="feedback-form__form" action="">
+<div class="feedback-form__main-content">
 <header class="feedback-form__header header">
     <div class="header__btn-wrap">
     <button class="header__btn"></button>
@@ -21,6 +21,7 @@
     </div>
     <h1 class="header__title">Форма обратной связи</h1>
 </header>
+<form class="feedback-form__form" action="">
     <div class="feedback-form__input-container">
         <div class="feedback-form__input-wrap" >
             <input  class="feedback-form__input--focus feedback-form" type="text" name="name" id="name" placeholder="Иванов Иван Иванович">
@@ -38,10 +39,12 @@
         <div class="captcha__img-wrap">
             <img src="../project2/assets/image/captcha/captcha.png" alt="captchaImg">
         </div>
+        <div class="cap__btn-wrap">
+            <button class="captcha__btn ">Отправить</button>
+        </div>
     </div>
-
 </form>
-
+</div>
 
 
 
