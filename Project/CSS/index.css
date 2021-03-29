@@ -727,6 +727,7 @@ content:"";
 
 .blog__article-title {
     font-size: 30px;
+    font-family: Muli-ExtraBold, sans-serif;
     line-height: 1.33;
     letter-spacing: -0.6px;
     color: #f2612d;
@@ -735,6 +736,7 @@ content:"";
 .blog__article-text {
     border: 2px solid palegreen;
     width: 472px;
+    line-height: 35px;
     padding-top:26px;
     position: relative;
 }
@@ -746,7 +748,7 @@ content:"";
     position: absolute;
     background: url("../assets/images/blog/arrow.png");
     bottom:12px;
-    left:45%;
+    left:75%;
 }
 
 .blog__article-date {
@@ -757,7 +759,7 @@ content:"";
     text-decoration: none;
     color:#1e1e1e;
     font-family: Muli-ExtraBold,sans-serif;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 800;
 }
 
