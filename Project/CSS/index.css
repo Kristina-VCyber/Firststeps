@@ -221,9 +221,7 @@ header {
     position: relative;
 
 }
-.header__btn:hover{
-    box-shadow: 0 5px 0;
-}
+
 .header__btn::after{
     content: "";
     display: block;
@@ -233,6 +231,9 @@ header {
     background: url("../assets/images/header/arrow.png");
     top: 27px;
     left:211px;
+}
+.header__btn:hover{
+    box-shadow: 0 0 20px 20px rgba(202, 233, 65, 0.4) ;
 }
 
 .btn {
@@ -245,6 +246,17 @@ header {
     justify-content: space-between;
     align-items: center;
     border: solid 2px #0aa566;
+}
+.btn:hover{
+    transform: scale(2);
+    transition: 2s;
+
+
+}
+.btn:focus{
+    color:#cae941;
+
+
 }
 
 .btn--green {
@@ -284,16 +296,16 @@ h4 {
     font-family: Muli-Regular, sans-serif;
     line-height: 1.94;
     font-size: 18px;
-    letter-spacing: normal;
 
 }
 
 /* TODO отображение текста не соответсвует макету, другой шрифт*/
 .smoothies__text {
     text-align: center;
-    width: 921px;
-    height: 122px;
+    max-width: 921px;
+    max-height: 122px;
     color: #1e1e1e;
+    line-height: 35px;
 }
 
 .smoothies__advantage {
@@ -364,7 +376,7 @@ h4 {
 
 .about__title {
     border: 1px solid red;
-    min-width: 588px;
+    width: 600px;
     font-size: 55px;
     line-height: 1.09;
     text-align: left;
@@ -391,6 +403,7 @@ h4 {
     list-style: url("../assets/images/about/marker.png");
     border: 1px solid red;
     font-size: 21px;
+   min-height: 329px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -408,6 +421,9 @@ h4 {
     border: solid 2px #f8b231;
     background: none;
     position: relative;
+}
+.about__btn:hover{
+    box-shadow: 0 0 20px 20px rgba(202, 233, 65, 0.4) ;
 }
 .about__btn::after{
 content:"";
@@ -464,7 +480,6 @@ content:"";
     font-size: 21px;
     line-height: 1.52;
     font-style: italic;
-    font-weight: normal;
     font-family: Muli-Regular, sans-serif;
 }
 
@@ -476,6 +491,9 @@ content:"";
     border-radius: 30px;
     border: solid 2px #ffffff;
     position: relative;
+}
+.products__btn:hover{
+    box-shadow: 0 0 20px 20px rgba(251, 255, 232, 0.4) ;
 }
 .products__btn::after{
     content: "";
@@ -527,9 +545,7 @@ content:"";
     justify-content: space-between;
 }
 
-.story__title {
-    width: 219px;
-}
+
 
 /*TODO Отображение текста не совпадает с макетом*/
 .story__text {
@@ -543,6 +559,12 @@ content:"";
     border-radius: 30px;
     position: relative;
 }
+.story__btn:hover{
+    box-shadow: 0 0 10px 10px rgba(202, 233, 65,0.3);
+
+}
+
+
 .story__btn::after{
     content: "";
     display: block;
@@ -625,7 +647,7 @@ content:"";
 
 .testimonials__quote-wrap {
     border: 2px solid red;
-    max-width: 455px;
+    max-width: 460px;
     color: #ffffff;
     text-align: center;
     font-size: 18px;
