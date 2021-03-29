@@ -6,19 +6,19 @@
 }
 
 @font-face {
-"Muli-Regular";
+font-family: "Muli-Regular";
     src: url("../assets/fonts/Muli-Regular.woff");
     font-style: normal;
 }
 
 @font-face {
-"Muli-ExtraBold" ;
+    font-family: "Muli-ExtraBold" ;
     src: url("../assets/fonts/Muli-ExtraBold.woff");
     font-style: normal;
 }
 
 @font-face {
-"Muli-Italic";
+    font-family: "Muli-Italic";
     src: url("../assets/fonts/Muli-Italic.ttf");
     font-style: normal;
 }
@@ -69,6 +69,7 @@ header {
     justify-content: space-between;
 
 
+
 }
 
 .main-menu__list-item {
@@ -89,15 +90,28 @@ header {
     color: white;
 }
 
+.main-menu__link:hover{
+    background: #0aa566;
+    border-radius: 10px;
+    transition-duration:1s;
+    transform: rotate(-30deg);
+
+}
+.main-menu__link:active{
+  color: #cae941;
+}
+
 /*logo*/
 .logo {
     border: 1px solid red;
 
 }
+
 .header__logo{
     position:absolute;
     top:54px;
     left: 843px;
+
 }
 
 /*personal*/
@@ -130,6 +144,18 @@ header {
 .personal__list-item {
     margin-right: 45px;
     position: relative;
+}
+.personal__link:hover{
+    background:#f2662f ;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition-duration:2s;
+    transform: rotate(-360deg);
+
+
+
 }
 
 
@@ -193,6 +219,10 @@ header {
     height: 70px;
     width: 280px;
     position: relative;
+
+}
+.header__btn:hover{
+    box-shadow: 0 5px 0;
 }
 .header__btn::after{
     content: "";
@@ -207,7 +237,7 @@ header {
 
 .btn {
     border-radius: 35px;
-    font-size: 24px;
+    font-size: 21px;
     font-family: Muli-ExtraBold, sans-serif;
     padding: 0 35px;
     color: white;
@@ -219,6 +249,7 @@ header {
 
 .btn--green {
     background-color: #0aa566;
+    font-size: 24px;
 }
 
 /*common titles*/
