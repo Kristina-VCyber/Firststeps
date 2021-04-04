@@ -283,7 +283,6 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f6edde;
 }
 
 .smoothies__title {
@@ -309,34 +308,62 @@ h4 {
 }
 
 .smoothies__advantage {
-    border: 1px solid red;
-    width: 1010px;
-    height: 389px;
-    margin: 61px 457px 107px 453px;
+    /*border: 1px solid yellowgreen;*/
+    max-width: 1010px;
+    max-height: 390px;
+    margin-top: 60px;
+    margin-bottom: 107px;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+.smoothies__advantage::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1010px;
+    height: 2px;
+    background-color: #f6edde;
+    top: 50%;
+    left: 0;
+
 }
 
 .advantage__img-wrap {
-    border: 1px solid red;
-    width: 252px;
-    height: 181px;
+    /*border: 1px solid red;*/
+    min-width: 250px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-
+    padding-top: 30px;
+    position: relative;
 }
 
+.advantage__img-wrap:not(:nth-child(4n))::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 210px;
+    background: #f6edde repeat;
+    top:0;
+    right:0;
+}
+
+.advantage__img{
+    margin-bottom: 30px;
+}
 .advantage__title {
     font-family: Muli-ExtraBold, sans-serif;
     font-size: 25px;
     font-weight: 800;
     line-height: 1.6;
     color: #f2612d;
-    border: 1px solid red;
+    margin-bottom: 30px;
+    /*border: 1px solid red;*/
 }
 
 
@@ -524,7 +551,7 @@ content:"";
 .story {
     display: flex;
     justify-content: space-between;
-    background-color: #f6edde;
+    background-color: #ffffff;
     border: 2px solid yellow;
     padding: 120px 310px 160px 308px;
 }
@@ -679,7 +706,6 @@ content:"";
 /*blog section*/
 .blog {
     border: 2px solid red;
-    background-color: #f6edde;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -766,7 +792,6 @@ content:"";
 /*instagram*/
 .instagram {
     border: 2px solid red;
-    background-color: #f6edde;
     display: flex;
     flex-direction: column;
     align-items: center;
