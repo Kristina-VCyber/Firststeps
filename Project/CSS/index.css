@@ -56,10 +56,13 @@ header {
 .header__top {
     padding: 70px 100px 100px;
     border: 1px solid red;
+    position: relative;
+}
+.header__inner{
+    flex-basis: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 /*menu*/
@@ -101,18 +104,7 @@ header {
   color: #cae941;
 }
 
-/*logo*/
-.logo {
-    border: 1px solid red;
 
-}
-
-.header__logo{
-    position:absolute;
-    top:54px;
-    left: 843px;
-
-}
 
 /*personal*/
 .header__right-block {
@@ -206,6 +198,94 @@ header {
     border-radius: 50%;
     padding-top: 3px;
 }
+/*logo*/
+.logo {
+    border: 1px solid red;
+
+}
+
+.header__logo{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+}
+.header__burger-btn{
+   background-color: transparent;
+    border:none;
+    position: fixed;
+    right:30px;
+    top:30px;
+    display: none;
+
+}
+.header__burger-icon{
+    width:40px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header__inner{
+        background-color: #0aa566;
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        bottom:0;
+        z-index: 10;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .header__burger-btn{
+        display: block;
+        z-index: 11;
+    }
+    .header__burger-btn:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+    .header__burger-btn:active{
+        transform: translateY(30px);
+    }
+   .header__right-block{
+       margin:100px 0 150px ;
+   }
+    .main-menu__list{
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .main-menu__list-item{
+        margin: 0 0 30px;
+    }
+    .main-menu__link{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 320px) {
+
+    .header__right-block{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .header__right-block::before{
+        display: none;
+    }
+    .header__personal{
+        margin-bottom: 20px;
+    }
+    .main-menu__list{
+        margin-top: 60px;
+        margin-left: 0;
+    }
+    .main-menu__list-item{
+        margin: 0 0 30px;
+    }
+}
+
 
 /*header content*/
 .header__content {
