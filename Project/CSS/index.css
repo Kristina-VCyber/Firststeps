@@ -216,7 +216,7 @@ header {
     position: fixed;
     right:30px;
     top:30px;
-    display: none;
+    display: block;
 
 }
 .header__burger-icon{
@@ -227,6 +227,11 @@ header {
 
 @media screen and (max-width: 768px) {
     .header__inner{
+        display: none;
+
+    }
+    .header__inner.active{
+        display: flex;
         background-color: #0aa566;
         position: fixed;
         top:0;
@@ -237,6 +242,7 @@ header {
         flex-direction: column-reverse;
         justify-content: center;
     }
+
     .header__burger-btn{
         display: block;
         z-index: 11;
@@ -248,9 +254,7 @@ header {
     .header__burger-btn:active{
         transform: translateY(30px);
     }
-   .header__right-block{
-       margin:100px 0 150px ;
-   }
+
     .main-menu__list{
         height: 500px;
         flex-direction: column;
@@ -388,7 +392,7 @@ h4 {
 }
 
 .smoothies__advantage {
-    /*border: 1px solid yellowgreen;*/
+    border: 1px solid yellowgreen;
     max-width: 1010px;
     max-height: 390px;
     margin-top: 60px;
@@ -412,7 +416,7 @@ h4 {
 }
 
 .advantage__img-wrap {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     min-width: 250px;
     min-height: 180px;
     display: flex;
@@ -445,6 +449,21 @@ h4 {
     margin-bottom: 30px;
     /*border: 1px solid red;*/
 }
+@media screen and (max-width: 768px) {
+    .smoothies__advantage{
+        max-height: 100vh;
+      max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: center;
+
+    }
+
+}
+
+
+
+
 
 
 /* section about */
