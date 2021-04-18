@@ -833,11 +833,32 @@ h4 {
     margin-left: 65px;
 }
 
-@media screen and (max-width: 765px) {
- .story{
-     padding:0;
- }
+@media screen and (max-width: 768px) {
+    .story {
+        padding: 0;
+        flex-flow: column-reverse wrap;
+    }
 
+    .story-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .story__img-wrap {
+        justify-content: center;
+    }
+
+    .story__img {
+        max-width: 400px;
+        max-height: 450px;
+        margin-left: 0;
+    }
+
+    .story__img-wrap::before {
+        top: 0;
+        left: 0;
+    }
 }
 
 
