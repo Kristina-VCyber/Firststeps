@@ -832,6 +832,7 @@ h4 {
         padding: 0;
         flex-flow: column-reverse wrap;
     }
+
     .story__wrap {
         min-height: 400px;
         margin-top: 0;
@@ -840,15 +841,18 @@ h4 {
         margin-bottom: 250px;
         text-align: center;
     }
+
     .story__img {
         max-width: 400px;
         max-height: 450px;
         margin-left: 0;
     }
-    .story__img-wrap{
+
+    .story__img-wrap {
         justify-content: center;
         padding-top: 60px;
     }
+
     .story__img-wrap::before {
         top: 250px;
         left: 0;
@@ -938,27 +942,26 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-    .testimonials::before{
-       top: -220px;
+    .testimonials::before {
+        top: -210px;
         right: 180px;
 
     }
-    .testimonials::after{
+
+    .testimonials::after {
         top: 50%;
-       left:0;
+        left: 0;
     }
-.testimonials__wrap{
-    flex-flow: column-reverse wrap;
-    padding-top: 30px;
+
+    .testimonials__wrap {
+        flex-flow: column-reverse wrap;
+        padding-top: 30px;
+    }
+
+    .testimonials__quote-wrap {
+        margin-top: 20px;
+    }
 }
-.testimonials__quote-wrap{
-    margin-top: 20px;
-}
-}
-
-
-
-
 
 
 /*blog section*/
@@ -967,7 +970,6 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
 .blog__container {
@@ -1050,6 +1052,47 @@ h4 {
     font-weight: 800;
 }
 
+@media screen and (max-width: 768px) {
+    .blog__container {
+        flex-flow: column wrap;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .blog__img-title-wrap {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .blog__img {
+        width: 500px;
+    }
+
+    .blog__article {
+        align-items: center;
+        padding-top: 50px;
+        padding-left: 0;
+    }
+    .blog__article::before {
+        top: 360px;
+        right: 30px;
+        position: absolute;
+    }
+
+    .blog__article-text {
+        text-align: center;
+    }
+    .blog__article-text::after {
+        bottom: 12px;
+        left: 420px;
+    }
+    .blog__article-date {
+        margin-left: 110px;
+    }
+}
+
+
 /*instagram*/
 .instagram {
     border: 2px solid red;
@@ -1121,6 +1164,30 @@ h4 {
     top: 8px;
     left: -38px;
 }
+
+@media screen and (max-width: 768px){
+    .instagram{
+        align-items:flex-start;
+        overflow: scroll;
+
+    }
+    .instagram__link{
+        align-self: center;
+
+
+    }
+    .instagram__img-wrap{
+        min-width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
 
 /*footer*/
 .footer {
