@@ -765,17 +765,11 @@ h4 {
     padding: 120px 310px 160px 308px;
 }
 
-.story__container {
-    border: 2px solid rebeccapurple;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .story__wrap {
     border: 2px solid olive;
-    min-height: 329px;
+    max-height: 329px;
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -838,25 +832,24 @@ h4 {
         padding: 0;
         flex-flow: column-reverse wrap;
     }
-
-    .story-wrap {
-        display: flex;
-        justify-content: center;
+    .story__wrap {
+        min-height: 400px;
+        margin-top: 0;
         align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-
-    .story__img-wrap {
-        justify-content: center;
-    }
-
     .story__img {
         max-width: 400px;
         max-height: 450px;
         margin-left: 0;
     }
-
+    .story__img-wrap{
+        justify-content: center;
+        padding-top: 30px;
+    }
     .story__img-wrap::before {
-        top: 0;
+        top: 250px;
         left: 0;
     }
 }
