@@ -837,7 +837,8 @@ h4 {
         margin-top: 0;
         align-items: center;
         padding-top: 50px;
-        padding-bottom: 50px;
+        margin-bottom: 250px;
+        text-align: center;
     }
     .story__img {
         max-width: 400px;
@@ -846,7 +847,7 @@ h4 {
     }
     .story__img-wrap{
         justify-content: center;
-        padding-top: 30px;
+        padding-top: 60px;
     }
     .story__img-wrap::before {
         top: 250px;
@@ -935,6 +936,29 @@ h4 {
     justify-content: space-between;
     min-width: 158px;
 }
+
+@media screen and (max-width: 768px) {
+    .testimonials::before{
+       top: -220px;
+        right: 180px;
+
+    }
+    .testimonials::after{
+        top: 50%;
+       left:0;
+    }
+.testimonials__wrap{
+    flex-flow: column-reverse wrap;
+    padding-top: 30px;
+}
+.testimonials__quote-wrap{
+    margin-top: 20px;
+}
+}
+
+
+
+
 
 
 /*blog section*/
