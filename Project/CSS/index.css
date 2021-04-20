@@ -1074,6 +1074,7 @@ h4 {
         padding-top: 50px;
         padding-left: 0;
     }
+
     .blog__article::before {
         top: 360px;
         right: 30px;
@@ -1083,10 +1084,12 @@ h4 {
     .blog__article-text {
         text-align: center;
     }
+
     .blog__article-text::after {
         bottom: 12px;
         left: 420px;
     }
+
     .blog__article-date {
         margin-left: 110px;
     }
@@ -1165,28 +1168,23 @@ h4 {
     left: -38px;
 }
 
-@media screen and (max-width: 768px){
-    .instagram{
-        align-items:flex-start;
+@media screen and (max-width: 768px) {
+    .instagram {
+        align-items: flex-start;
         overflow: scroll;
 
     }
-    .instagram__link{
+
+    .instagram__link {
         align-self: center;
 
 
     }
-    .instagram__img-wrap{
+
+    .instagram__img-wrap {
         min-width: 300px;
     }
 }
-
-
-
-
-
-
-
 
 
 /*footer*/
@@ -1407,4 +1405,58 @@ h4 {
     bottom: 50px;
     right: 101px;
 
+}
+
+@media screen and (max-width: 768px) {
+    .footer__top {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer__logo {
+        border: 2px solid blue;
+        padding-left: 0;
+        flex: 4 0 500px;
+        justify-content: center;
+
+    }
+
+    .footer__information {
+        flex-flow: column;
+        padding: 0;
+        flex: 2 0 350px;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 220px;
+    }
+
+    .information__list {
+        flex-basis: 170px;
+        align-items: center;
+    }
+
+
+    .footer__payment {
+        flex-flow: column;
+        flex: 2 0 350px;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 220px;
+    }
+
+    .payment__container {
+        max-width: 260px;
+        justify-content: center;
+        flex-basis: 170px;
+}
+    .footer__subscription{
+        align-items: center;
+        padding-right: 0;
+    }
+    .footer__bottom-text-wrap{
+        padding-left: 200px;
+    }
 }
