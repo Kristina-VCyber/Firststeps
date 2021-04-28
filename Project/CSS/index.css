@@ -42,6 +42,7 @@ a:hover {
 
 html,
 body {
+    font-size: 10px;
     font-family: Muli-Regular, sans-serif;
 }
 
@@ -54,7 +55,7 @@ header {
 }
 
 .header__top {
-    padding: 70px 100px 100px;
+    padding: 7rem 10rem 10rem;
     border: 1px solid red;
     position: relative;
 }
@@ -77,7 +78,7 @@ header {
 }
 
 .main-menu__list-item {
-    margin-right: 35px;
+    margin-right: 3.5rem;
 
 
 }
@@ -89,7 +90,7 @@ header {
 .main-menu__link {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: Muli-Bold, sans-serif;
     color: white;
 }
@@ -165,7 +166,7 @@ header {
     text-align: center;
     border-radius: 50%;
     line-height: 2;
-    font-size: 10px;
+    font-size: 1rem;
     color: black;
     position: absolute;
     top: -11px;
@@ -190,7 +191,9 @@ header {
 }
 
 .social__link {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 35px;
     min-width: 35px;
     max-width: 35px;
@@ -252,6 +255,8 @@ header {
     .header__burger-btn {
         display: block;
         z-index: 11;
+        position: fixed;
+
     }
 
     .header__burger-btn:hover {
@@ -281,14 +286,19 @@ header {
 }
 
 @media screen and (max-width: 320px) {
+    .header__inner.active{
+        margin: 0 auto;
+    }
     .header__burger-btn{
         top: 10px;
         right: 10px;
+       display: block;
     }
     .header__right-block {
         flex-direction: column;
         margin-bottom: 20px;
     }
+
 
     .header__right-block::before {
         display: none;
@@ -341,7 +351,7 @@ header {
 
 .btn {
     border-radius: 35px;
-    font-size: 21px;
+    font-size: 2.1rem;
     font-family: Muli-ExtraBold, sans-serif;
     padding: 0 35px;
     color: white;
@@ -373,9 +383,9 @@ header {
 h2 {
     font-family: Muli-ExtraBold, sans-serif;
     line-height: 0.8;
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 5rem;
     color: #f7ae3b;
 }
 
@@ -399,17 +409,17 @@ h4 {
 .text {
     font-family: Muli-Regular, sans-serif;
     line-height: 1.94;
-    font-size: 18px;
+    font-size: 1.8rem;
 
 }
 
 /* TODO отображение текста не соответсвует макету, другой шрифт*/
 .smoothies__text {
     text-align: center;
-    max-width: 921px;
-    max-height: 122px;
+    max-width: 92rem;
+    max-height: 12rem;
     color: #1e1e1e;
-    line-height: 35px;
+    line-height: 3.5rem;
 }
 
 .smoothies__advantage {
@@ -464,11 +474,11 @@ h4 {
 
 .advantage__title {
     font-family: Muli-ExtraBold, sans-serif;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.6;
     color: #f2612d;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     /*border: 1px solid red;*/
 }
 
@@ -550,8 +560,8 @@ h4 {
 
 .about__title {
     border: 1px solid red;
-    min-width: 600px;
-    font-size: 55px;
+    min-width: 60rem;
+    font-size: 5.5rem;
     line-height: 1.09;
     text-align: left;
     color: #ffffff;
@@ -562,12 +572,12 @@ h4 {
 .about__title::after {
     content: "";
     display: block;
-    min-width: 450px;
-    min-height: 13px;
+    min-width: 45rem;
+    min-height: 1.3rem;
     background: url("../assets/images/about/line.png") center;
     position: absolute;
-    bottom: -8px;
-    left: 69px;
+    bottom: -0.8rem;
+    left: 6.9rem;
 }
 
 .about__title--green {
@@ -670,15 +680,15 @@ h4 {
 .products-menu {
     border: 1px solid red;
     font-family: Muli-Bold, sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 1.6;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 0 1 25%;
-    padding-top: 129px;
-    padding-bottom: 79px;
+    padding-top: 12.9rem;
+    padding-bottom: 7.9rem;
 }
 
 /*TODO уменьшить расстояние от картинки до текста*/
@@ -699,7 +709,7 @@ h4 {
 
 
 .products__text {
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 1.52;
     font-style: italic;
     font-family: Muli-Regular, sans-serif;
@@ -925,10 +935,10 @@ h4 {
 
 .testimonials__quote-wrap {
     border: 2px solid red;
-    max-width: 460px;
+    max-width: 46rem;
     color: #ffffff;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.94;
     display: flex;
     flex-direction: column;
@@ -1025,7 +1035,7 @@ h4 {
 }
 
 .blog__article-title {
-    font-size: 30px;
+    font-size: 3rem;
     font-family: Muli-ExtraBold, sans-serif;
     line-height: 1.33;
     letter-spacing: -0.6px;
@@ -1163,10 +1173,10 @@ h4 {
     font-weight: 800;
     line-height: 1.67;
     text-decoration: none;
-    font-size: 24px;
-    margin-bottom: 45px;
+    font-size: 2.4rem;
+    margin-bottom: 4.5rem;
     position: relative;
-    min-width: 26px;
+    min-width: 2.6rem;
 }
 
 .instagram__link::before {
@@ -1221,7 +1231,7 @@ h4 {
 }
 
 .footer__title {
-    font-size: 26px;
+    font-size: 2.6rem;
     color: white;
 }
 
@@ -1315,14 +1325,14 @@ h4 {
 }
 
 .subscription__form-input {
-    width: 495px;
-    height: 60px;
-    border-radius: 30px;
+    width: 49.5rem;
+    height: 6rem;
+    border-radius: 3rem;
     border: 2px solid #f6ab3b;
     font-family: Muli-Bold, sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: bold;
-    padding-left: 63px;
+    padding-left: 6.3rem;
 }
 
 .subscription__form-btn-list-wrap {
@@ -1350,7 +1360,7 @@ h4 {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Muli-Bold, sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 800;
     background-color: #f6ab3b;
     color: #6d450c;
@@ -1372,9 +1382,9 @@ h4 {
     display: flex;
     justify-content: center;
     color: #ffffff;
-    font-size: 16px;
-    padding-top: 26px;
-    padding-bottom: 21px;
+    font-size: 1.6rem;
+    padding-top: 2.6rem;
+    padding-bottom: 2.1rem;
 
 }
 
@@ -1384,11 +1394,12 @@ h4 {
     justify-content: center;
     align-items: center;
     flex: 1;
+    padding-left: 200px;
 }
 
 .footer__bottom-text {
     border: 2px solid greenyellow;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #af8a82;
 }
 
@@ -1411,7 +1422,7 @@ h4 {
     min-width: 50px;
     max-width: 50px;
     background-color: #f2662f;
-    font-size: 16px;
+    font-size: 1.6rem;
     border-radius: 5px;
     position: fixed;
     bottom: 50px;
